@@ -1,7 +1,7 @@
 
 public  class AbstractElement implements Element {
 
-	public void accept(Visitor s) {
+	public void acceptVisitor(Visitor s) {
 
 	}
 	
@@ -15,9 +15,9 @@ public  class AbstractElement implements Element {
 		
 	}
 
-	public Element getChild(int index) {
-		// TODO Auto-generated method stub
-		return null;
+	public void getChild(int index) {
+		 throw new UnsupportedOperationException("Not yet implemented.");
+	
 	}
 
 	public void print() {

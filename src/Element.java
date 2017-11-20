@@ -5,10 +5,10 @@ public interface Element {
 
 	public void remove (Element elem);
 
-	public  Element getChild(int index);
+	public  void getChild(int index);
 
 
-	public void accept(Visitor s);
+	public void acceptVisitor(Visitor s);
 
 	public void print();
 

@@ -1,6 +1,9 @@
 
 public class Tabel extends AbstractElement{
 	String numeTabel;
+	
+	
+	
 	public Tabel (String numeTabel) {
 		this.numeTabel=numeTabel;
 	}
@@ -15,15 +18,23 @@ public class Tabel extends AbstractElement{
 		
 	}
 	@Override
-	public Element getChild(int index) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public void print() {
+	public void getChild(int index) {
 		// TODO Auto-generated method stub
 		
 	}
+	@Override
+	public void print() {
+		 System.out.println(numeTabel);
+		
+	}
 	
-
+	public void acceptVisitor(Visitor s) {
+		  s.visitTabel(this);
+	}
+	
+	
+	public String toString()
+    {
+        return numeTabel;
+    }
 }

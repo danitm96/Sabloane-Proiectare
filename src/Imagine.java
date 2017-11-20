@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Imagine extends AbstractElement {
 	String numeImagine;
+	
 	public Imagine (String numeImagine) {
 		this.numeImagine=numeImagine;
 		
@@ -9,13 +10,18 @@ public class Imagine extends AbstractElement {
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
+		 System.out.println(numeImagine);
 		
 	}
 
-	public void accept(Visitor s) {
+	public void acceptVisitor(Visitor s) {
 	
-		
+		 s.visitImagine(this);
 	}
+	
+	  public String toString()
+	    {
+	        return numeImagine;
+	    }
 
 }

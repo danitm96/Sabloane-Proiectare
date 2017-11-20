@@ -21,9 +21,9 @@ public class ImaginePorxy extends AbstractElement {
 	}
 
 	@Override
-	public Element getChild(int index) {
-		// TODO Auto-generated method stub
-		return null;
+	public void getChild(int index) {
+		
+	
 	}
 
 	@Override

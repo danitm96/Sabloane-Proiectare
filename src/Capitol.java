@@ -29,14 +29,14 @@ public void remove(Element elem) {
 
 
 @Override
-public Element getChild(int index) {
+public void getChild(int index) {
 	// TODO Auto-generated method stub
-	return null;
+
 }
 
 
 
-public void accept(Visitor s) {
+public void acceptVisitor(Visitor s) {
 	// TODO Auto-generated method stub
 	
 }

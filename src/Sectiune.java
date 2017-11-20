@@ -1,43 +1,47 @@
 import java.util.ArrayList;
+
+
+
 public class Sectiune implements Element {
-	private String title;
 	
-	private ArrayList<Element> secContent= new ArrayList<Element>();
+	//private String title;
+	
+	private ArrayList<Element> secContent;
 
 	
 	
-	 Sectiune (String titlu){
-		 this.title=titlu;
+	 public Sectiune (){
+		 secContent= new ArrayList<Element>();
 	 }
 	@Override
 	public void addElement(Element elem) throws Exception {
-		// TODO Auto-generated method stub
+		 secContent.add(elem);
 		
 	}
 
 	@Override
 	public void remove(Element elem) {
-		// TODO Auto-generated method stub
+		secContent.add(elem);
 		
 	}
 
 	@Override
-	public Element getChild(int index) {
-		// TODO Auto-generated method stub
-		return secContent.get(index);
+	public void  getChild(int index) {
+
+	 secContent.get(index);
 	}
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
+		 System.out.println("Works");
 		
 	}
 	@Override
-	public void accept(Visitor s) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	public void acceptVisitor(Visitor v)
+    {
+        v.visitSectiune(this);
+    }
+    
 	
 
 }
